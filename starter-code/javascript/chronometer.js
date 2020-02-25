@@ -5,7 +5,7 @@ class Chronometer {
     }
     startClick() {
         var fixedThis = this;
-        this.intervalId = setInterval(function() {
+        this.intervalId = setInterval(function () {
             fixedThis.currentTime++;
             console.log(fixedThis.currentTime)
         }, 1000)
@@ -25,10 +25,9 @@ class Chronometer {
     }
     resetClick() {
         this.currentTime = 0;
-        clearSplits();
-
     }
     splitClick() {
         printSplit();
     }
+
 }
